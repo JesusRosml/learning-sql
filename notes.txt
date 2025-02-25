@@ -1,0 +1,7 @@
+Para levantar las images es con el siguiente comando:
+
+docker compose up -d
+
+Bajar las dos imagenes:
+
+docker compose down

@@ -1,0 +1,13 @@
+Recomendaciones
+    - Se recomienda que desactivemos el autocommit de las bases de datos:
+        - auto commit;
+    Ya que todas las acciones que realicemos en nuestra base de datos mediante comandos este tendra un impacto
+    directamente.
+    - Se recomienda que antes de hacer una eliminación, actualización u otra acción que pueda afectar todos los
+    registros se haga un select con la misma condición con la que se harán las eliminaciones (ejemplo), el select debe
+    devolver los registros que se desean eliminar.
+    - Se recomienda que se coloquen indices en las columnas altamentes transacionales o consultadas, la creacion de un
+    indice en una base de datos que ya ha sido creada y contiene muchos datos es bloqueante
+    - No se recomienda hacer DROPS en cascada
+    - Es recomendable que para mantener la integridad referencial los registros no se elimine, si no que se marquen
+    como eliminado pero no es así
